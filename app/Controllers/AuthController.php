@@ -49,7 +49,7 @@ class AuthController extends BaseController
                 'picture' => $userInfo->picture,
             ]);
 
-            return redirect()->to('/dashboard'); // Redirect to a dashboard or home page
+            return redirect()->to('/employer'); // Redirect to a dashboard or home page
         }
 
         return redirect()->to('/signin'); // Redirect back to sign-in on failure
