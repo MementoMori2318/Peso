@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 <body>  
-    <a href="/jobs" class="button is-primary">home</a>
+    <a href="jobs" class="button is-primary">home</a>
         <div class="container">
             <h1 class="title">Sign In with Google</h1>
             <a href="/auth/google" class="button is-primary">Sign In with Google</a>

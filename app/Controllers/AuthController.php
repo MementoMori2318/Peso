@@ -7,6 +7,11 @@ use Google\Client;
 
 class AuthController extends BaseController
 {
+    public function signinPage()
+    {
+        return view('signin');
+    }
+
     private $googleClient;
 
     public function __construct()
@@ -23,11 +28,6 @@ class AuthController extends BaseController
     {
         $authUrl = $this->googleClient->createAuthUrl();
         return redirect()->to($authUrl);
-    }
-
-    public function signinPage()
-    {
-        return view('signin');
     }
 
     public function handleGoogleCallback()
