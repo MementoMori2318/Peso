@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PESO</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <meta name="color-scheme" content="light">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-      body {
-    background-color: #ffffff !important;
-    color: #112D4E !important;
+      :root {
+    color-scheme: light !important;
   }
     /* Remove background hover for Sign In / Sign Up */
 .navbar-end .custom-link:hover {
@@ -95,7 +96,9 @@
   padding-right: 0.75rem !important;
   max-width: 100% !important; /* optional, to ensure it stretches full width */
   }
-
+  /* .footer {
+    background-color: #112D4E;
+  } */
 
 </style>
 </head>
@@ -104,7 +107,7 @@
   <!-- Header -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="jobs">
+    <a class="navbar-item" href="<?= base_url('jobs') ?>">
       <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo" style="max-height: 70px;">
       <div class="ml-3 has-text-weight-bold is-flex is-flex-direction-column is-align-items-start">
         <span class="is-size-5">PESO</span>
@@ -122,15 +125,16 @@
   <div id="navbarBasic" class="navbar-menu">
     <!-- Left side links -->
     <div class="navbar-start">
-      <a class="navbar-item" href="jobs">Find Jobs</a>
-      <a class="navbar-item" href="/about">About</a>
-      <a class="navbar-item" href="/contact">Profile</a>
+      <a class="navbar-item" href="<?= base_url('jobs') ?>">Find Jobs</a>
+      <a class="navbar-item" href="<?= base_url('about') ?>">About</a>
+      <a class="navbar-item" href="<?= base_url('seeker/profile') ?>">Profile</a>
     </div>
 
-    <!-- Right side links (plain text style) -->
+    <!-- Right side links -->
     <div class="navbar-end">
       <div class="navbar-item">
-      <a class="navbar-item custom-link" href="signin">Sign In</a>
+        <a class="navbar-item custom-link" href="<?= base_url('signin') ?>">Sign In</a>
+      </div>
     </div>
   </div>
 </nav>

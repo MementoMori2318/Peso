@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      <strong>PESO</strong> by Your Organization. © <?= date('Y') ?>. All rights reserved.
+      <strong>PESO</strong> by Cyber Squad. © <?= date('Y') ?>. All rights reserved.
     </p>
   </div>
 </footer>

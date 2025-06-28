@@ -1,7 +1,7 @@
 <?= $this->include('layouts/header') ?>
-<section class="section">
+<section class="section" style="background-color: #112D4E;">
   <div class="container">
-    <h1 class="title has-text-centered">Job Seeker Information</h1>
+    <h1 class="title has-text-centered has-text-white-ter">Job Seeker Information</h1>
 
     <form action="/seeker/save" method="post" enctype="multipart/form-data" class="box">
 
