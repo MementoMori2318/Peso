@@ -43,14 +43,16 @@ class Jobs extends BaseController
     public function employerProfile()
     {
         $employer = session()->get('employer') ?? [
-            'company_name'  => 'Cyber Squad Inc.',
-            'contact'       => '09128887777',
-            'address'       => 'Naga City, Camarines Sur',
-            'industry'      => 'IT Services',
-            'bio'           => 'We are a growing company seeking talented individuals.',
-            'photo'         => null,
+            'contact_person'    => 'Maria Santos',
+            'organization_name' => 'Santos Family',
+            'contact'           => '09123456789',
+            'email'             => 'maria.santos@gmail.com',
+            'address'           => 'Zone 4, Pili, Camarines Sur',
+            'bio'               => 'Looking for part-time help around the household.',
+            'photo'             => null,
         ];
 
         return view('employer_profile', ['employer' => $employer]);
     }
+
 }

@@ -53,7 +53,8 @@
       <div class="field">
         <label class="label">Requirements / Qualifications</label>
         <div class="control">
-          <textarea class="textarea" name="requirements" placeholder="e.g., Trustworthy, 2 years experience, etc."></textarea>
+          <textarea class="textarea" name="requirements"
+            placeholder="e.g., Trustworthy, 2 years experience, etc."></textarea>
         </div>
       </div>
 
